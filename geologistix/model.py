@@ -125,4 +125,8 @@ class QuoteResult:
             value = original.get(key)
             if value is not None:
                 original[key] = f"{Decimal(value):.2f}"
+        original_quantity = original.get("quantity")
+        if original_quantity is not None:
+            q = Decimal(original_quantity)
+            original["quantity"] = int(q) if q == q.to_integral_value() else float(q)
         return d

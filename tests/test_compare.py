@@ -264,6 +264,30 @@ class TestIO(unittest.TestCase):
         payload = compare(quotes=[], fx_rates=[])
         self.assertEqual(json.loads(json.dumps(payload))["contract_version"], "delivered-cost/0.1")
 
+    def test_output_is_json_serializable_with_all_fields(self):
+        payload = compare(
+            quotes=[
+                Quote(
+                    supplier="P",
+                    material="X",
+                    spec="spec",
+                    quantity=Decimal("2.5"),
+                    unit="u",
+                    unit_price=Decimal("10"),
+                    currency="USD",
+                    freight_cost=Decimal("5"),
+                    freight_currency="ARS",
+                    other_costs=Decimal("1"),
+                    date="2026-11-11",
+                )
+            ],
+            fx_rates=[fx_usd_ars()],
+        )
+        encoded = json.dumps(payload)  # no debe lanzar TypeError por Decimal
+        self.assertIn("total_base", encoded)
+        decoded = json.loads(encoded)
+        self.assertIsInstance(decoded["results"][0]["total_base"], str)
+
 
 if __name__ == "__main__":
     unittest.main()
