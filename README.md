@@ -53,7 +53,7 @@ Es un motor **determinista** (misma entrada → mismo resultado), **sin IA**, **
 | Contrato de salida | ✅ `delivered-cost/0.1` (JSON / CSV / tabla) |
 | Regla FX + snapshots con `retrieved_at` | ✅ Operativo (BNA como fuente observada; BCRA documentado) |
 | Ingesta CSV de cotizaciones | ✅ Operativo (mapeo es/en, sin inventar datos) |
-| Tests | ✅ Suite unittest + CI en Python 3.10/3.11/3.12 |
+| Tests | ✅ Suite unittest (17) + CI en Python 3.10/3.11/3.12 — *la ejecución en GitHub Actions estaba en cola en el momento del release; los tests pasan en local con el mismo comando (`pytest -q`)* |
 | Casos reales comparables | ⚠️ **Pendiente**: faltan cotizaciones formales + flete de un caso concreto |
 | Datos | 🔎 Mixto: FX **observado**, precios web **estimados**, RFQ **pendiente** — etiquetado por dato |
 | Licencias de fuentes | ⚠️ Verificar ToS/licencia por fuente **antes** de automatizar ingesta |
