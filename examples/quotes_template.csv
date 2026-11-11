@@ -1,0 +1,2 @@
+supplier,origin,material,spec,quantity,unit,unit_price,currency,price_includes_vat,freight_cost,freight_currency,freight_terms,other_costs,other_currency,other_label,quote_id,date,valid_until,source,status,evidence_ref,notes
+"Proveedor A","Planta A","Cemento portland CPC40 50 kg","CPC40, 50 kg",100,bolsa,8200,ARS,true,180000,ARS,"puesto en obra",25000,ARS,"descarga","P-0001","2026-11-11","2026-11-25","Presupuesto formal escrito","observado","presupuestos/P-0001.pdf","Incluye IVA; entrega en 5 dias."

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="GeoLogistix - comparador auditable de costo entregado">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1F33"/>
+      <stop offset="55%" stop-color="#123A54"/>
+      <stop offset="100%" stop-color="#0E7C7B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4FD1C5"/>
+      <stop offset="100%" stop-color="#63B3ED"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bg)"/>
+
+  <!-- grilla sutil -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 100 H1280 M0 200 H1280 M0 300 H1280"/>
+    <path d="M160 0 V400 M320 0 V400 M480 0 V400 M640 0 V400 M800 0 V400 M960 0 V400 M1120 0 V400"/>
+  </g>
+
+  <!-- marca / isometric blocks -->
+  <g transform="translate(70,236)" opacity="0.95">
+    <polygon points="0,40 40,18 80,40 40,62" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
+    <polygon points="0,40 0,92 40,114 40,62" fill="#0B1F33" fill-opacity="0.55" stroke="url(#accent)" stroke-width="2.5"/>
+    <polygon points="80,40 80,92 40,114 40,62" fill="#0B1F33" fill-opacity="0.35" stroke="url(#accent)" stroke-width="2.5"/>
+    <polygon points="60,20 100,-2 140,20 100,42" fill="none" stroke="#63B3ED" stroke-width="2" opacity="0.55"/>
+    <polygon points="60,20 60,72 100,94 100,42" fill="#0B1F33" fill-opacity="0.4" stroke="#63B3ED" stroke-width="2" opacity="0.55"/>
+    <polygon points="140,20 140,72 100,94 100,42" fill="#0B1F33" fill-opacity="0.25" stroke="#63B3ED" stroke-width="2" opacity="0.55"/>
+  </g>
+
+  <text x="250" y="176" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="76" font-weight="700" fill="#FFFFFF" letter-spacing="-1">GeoLogistix</text>
+  <text x="252" y="222" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="url(#accent)">Comparador auditable de costo entregado</text>
+
+  <text x="252" y="266" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="19" fill="#C7D6E3">Material + flete + ajustes · Conversión FX fechada · Procedencia por dato</text>
+  <text x="252" y="296" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="19" fill="#C7D6E3">Determinista · Sin IA · No inventa datos · Decisión humana</text>
+
+  <!-- chips de contrato -->
+  <g font-family="Consolas, ui-monospace, Menlo, monospace" font-size="16" fill="#E6FFFA">
+    <rect x="252" y="318" width="228" height="32" rx="6" fill="#0B1F33" fill-opacity="0.6" stroke="#4FD1C5" stroke-opacity="0.6"/>
+    <text x="266" y="339">delivered-cost/0.1</text>
+    <rect x="492" y="318" width="188" height="32" rx="6" fill="#0B1F33" fill-opacity="0.6" stroke="#63B3ED" stroke-opacity="0.6"/>
+    <text x="506" y="339">observed | estimated</text>
+    <rect x="692" y="318" width="176" height="32" rx="6" fill="#0B1F33" fill-opacity="0.6" stroke="#63B3ED" stroke-opacity="0.6"/>
+    <text x="706" y="339">MIT · 0 deps</text>
+  </g>
+</svg>

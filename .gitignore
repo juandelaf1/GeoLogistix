@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tests / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Datos locales y artefactos runtime (nunca versionar estado local)
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+!examples/quotes_template.csv
+
+# Casos locales con datos reales/confidenciales (no versionar)
+casos/
+fx_snapshots/
+*.local.json
+
+# Paquetes de especificacion legacy y MVP previo (conservados en el workspace,
+# fuera del repo publico del producto)
+costo-entregado-mvp/
+geo-abastecimiento-ar/
+geologistix_foundation/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editores / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
